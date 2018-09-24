@@ -5,8 +5,6 @@ Created on Thu Sep 20 12:45:16 2018
 @author: jrgan
 """
 
-#%%
-
 #Check if the related packages are ok (do not get an error)
 #ModuleNotFoundError: No module named 'pandas'
 import pandas as pd
@@ -24,8 +22,9 @@ df = pd.DataFrame(my_data,
                   columns = ['first_name','age', 'RFM_Star', 'AvgSpend'])
 
 #Exercise uncomment the next lines and check the average of all
-#df.mean(0)
-#df["age"].mean()
+df.mean(0)
+df["age"].mean()
 
 
 #Get the mean of the Average Spending
+df['AvgSpend'].mean()
